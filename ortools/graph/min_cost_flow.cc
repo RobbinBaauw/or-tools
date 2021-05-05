@@ -1174,6 +1174,10 @@ CostValue SimpleMinCostFlow::UnitCost(ArcIndex arc) const {
   return arc_cost_[arc];
 }
 
+void SimpleMinCostFlow::SetArcCapacity(ArcIndex arc, FlowQuantity capacity) {
+  arc_capacity_[arc] = capacity;
+}
+
 FlowQuantity SimpleMinCostFlow::Supply(NodeIndex node) const {
   return node_supply_[node];
 }

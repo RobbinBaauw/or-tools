@@ -279,6 +279,8 @@ class SimpleMinCostFlow : public MinCostFlowBase {
   FlowQuantity Supply(NodeIndex node) const;
   CostValue UnitCost(ArcIndex arc) const;
 
+  void SetArcCapacity(ArcIndex arc, FlowQuantity capacity);
+
  private:
   typedef ::util::ReverseArcStaticGraph<NodeIndex, ArcIndex> Graph;
   enum SupplyAdjustment { ADJUST, DONT_ADJUST };
