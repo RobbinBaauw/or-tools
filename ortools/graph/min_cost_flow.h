@@ -280,6 +280,7 @@ class SimpleMinCostFlow : public MinCostFlowBase {
   CostValue UnitCost(ArcIndex arc) const;
 
   void SetArcCapacity(ArcIndex arc, FlowQuantity capacity);
+  void SetArcCost(ArcIndex arc, CostValue cost);
 
  private:
   typedef ::util::ReverseArcStaticGraph<NodeIndex, ArcIndex> Graph;

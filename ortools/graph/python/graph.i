@@ -116,6 +116,10 @@
 %unignore operations_research::SimpleMinCostFlow::Supply;  // untested
 %unignore operations_research::SimpleMinCostFlow::UnitCost;
 
+%unignore operations_research::SimpleMinCostFlow::SetArcCost;
+%unignore operations_research::SimpleMinCostFlow::SetArcCapacity;
+
+
 %include "ortools/graph/min_cost_flow.h"
 
 %unignoreall
